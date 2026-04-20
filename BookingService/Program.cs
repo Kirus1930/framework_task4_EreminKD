@@ -1,4 +1,6 @@
-using System;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using BookingService.Health;
 using BookingService.Infrastructure;
 using BookingService.Services;
@@ -6,7 +8,7 @@ using BookingService.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<IProcessRepository, InMemoryProcessRepository>();
-builder.Services.AddSingleton<Services.BookingService>();
+builder.Services.AddSingleton<BookingService.Services.BookingService>();
 
 builder.Services.AddControllers();
 builder.Services.AddLogging();
