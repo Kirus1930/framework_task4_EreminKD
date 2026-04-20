@@ -34,7 +34,7 @@ public class BookingService
             ["ProcessId"] = processId
         });
 
-        // идемпотентность
+        // Идемпотентность
         if (process.ProcessedEvents.Contains(idempotencyKey))
         {
             Metrics.DuplicateEvents.Add(1);
@@ -87,7 +87,7 @@ public class BookingService
 
             _logger.LogError(ex, "Failure");
 
-            // компенсация
+            // Компенсация
             if (process.State == BookingState.RoomReserved)
             {
                 process.State = BookingState.Created;
