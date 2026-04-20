@@ -1,4 +1,8 @@
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 using BookingService.Domain;
 using BookingService.Infrastructure;
 using BookingService.Observability;
