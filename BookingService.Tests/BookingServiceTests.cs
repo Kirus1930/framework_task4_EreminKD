@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using BookingService.Domain;
 using BookingService.Infrastructure;
 using BookingService.Services;
@@ -10,7 +11,6 @@ public class BookingServiceTests
     private BookingService CreateService(out InMemoryProcessRepository repo)
     {
         repo = new InMemoryProcessRepository();
-
         var logger = new Mock<ILogger<BookingService>>();
 
         return new BookingService(repo, logger.Object);
@@ -32,14 +32,13 @@ public class BookingServiceTests
     }
 
     [Fact]
-    public async Task Should_Handle_Compensation_On_Failure()
+    public async Task Should_Handle_Compensation()
     {
         var service = CreateService(out var repo);
 
         await service.HandleEvent("2", "1", "c1", "create");
         await service.HandleEvent("2", "2", "c1", "reserve");
 
-        // Пока не получим ошибку
         for (int i = 0; i < 10; i++)
             await service.HandleEvent("2", $"p{i}", "c1", "pay");
 
