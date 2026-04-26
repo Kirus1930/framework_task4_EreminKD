@@ -1,5 +1,0 @@
-C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\obj\Debug\net8.0\BookingService.Tests.csproj.AssemblyReference.cache
-C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\obj\Debug\net8.0\BookingService.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\obj\Debug\net8.0\BookingService.Tests.AssemblyInfoInputs.cache
-C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\obj\Debug\net8.0\BookingService.Tests.AssemblyInfo.cs
-C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\obj\Debug\net8.0\BookingService.Tests.csproj.CoreCompileInputs.cache
