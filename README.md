@@ -144,6 +144,10 @@ curl -X POST "http://localhost:5000/booking?processId=1&action=reserve" \
 curl -X POST "http://localhost:5000/booking?processId=1&action=pay" \
  -H "Idempotency-Key: 3" \
  -H "X-Correlation-Id: abc"
+
+curl -X POST "http://localhost:5000/booking?processId=1&action=complete" \
+ -H "Idempotency-Key: 4" \
+ -H "X-Correlation-Id: abc"
 ```
 
 ### Проверка состояния сервиса:
