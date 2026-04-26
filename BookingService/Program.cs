@@ -8,7 +8,7 @@ using BookingService.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<IProcessRepository, InMemoryProcessRepository>();
-builder.Services.AddSingleton<BookingService.Services.BookingService>();
+builder.Services.AddSingleton<BookingService.Services.BookingProcessor>();
 
 builder.Services.AddControllers();
 builder.Services.AddLogging();
