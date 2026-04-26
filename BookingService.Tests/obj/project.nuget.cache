@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qSFbRFl2G2E=",
+  "dgSpecHash": "gUlFpsuiPUM=",
   "success": true,
   "projectFilePath": "C:\\Users\\Kiril\\Documents\\GitHub\\framework_task4_EreminKD\\BookingService.Tests\\BookingService.Tests.csproj",
   "expectedPackageFiles": [
@@ -96,6 +96,7 @@
     "C:\\Users\\Kiril\\.nuget\\packages\\xunit.core\\2.5.0\\xunit.core.2.5.0.nupkg.sha512",
     "C:\\Users\\Kiril\\.nuget\\packages\\xunit.extensibility.core\\2.5.0\\xunit.extensibility.core.2.5.0.nupkg.sha512",
     "C:\\Users\\Kiril\\.nuget\\packages\\xunit.extensibility.execution\\2.5.0\\xunit.extensibility.execution.2.5.0.nupkg.sha512",
+    "C:\\Users\\Kiril\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.0\\xunit.runner.visualstudio.2.5.0.nupkg.sha512",
     "C:\\Users\\Kiril\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.24\\microsoft.netcore.app.ref.8.0.24.nupkg.sha512",
     "C:\\Users\\Kiril\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.24\\microsoft.windowsdesktop.app.ref.8.0.24.nupkg.sha512",
     "C:\\Users\\Kiril\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.24\\microsoft.aspnetcore.app.ref.8.0.24.nupkg.sha512"

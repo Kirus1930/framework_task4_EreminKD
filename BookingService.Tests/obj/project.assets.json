@@ -1781,6 +1781,18 @@
           }
         }
       },
+      "xunit.runner.visualstudio/2.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "build": {
+          "build/net6.0/xunit.runner.visualstudio.props": {}
+        }
+      },
       "BookingService/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -5613,6 +5625,32 @@
         "xunit.extensibility.execution.nuspec"
       ]
     },
+    "xunit.runner.visualstudio/2.5.0": {
+      "sha512": "+Gp9vuC2431yPyKB15YrOTxCuEAErBQUTIs6CquumX1F073UaPHGW0VE/XVJLMh9W4sXdz3TBkcHdFWZrRn2Hw==",
+      "type": "package",
+      "path": "xunit.runner.visualstudio/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "_content/README.md",
+        "_content/logo-128-transparent.png",
+        "build/net462/xunit.abstractions.dll",
+        "build/net462/xunit.runner.reporters.net452.dll",
+        "build/net462/xunit.runner.utility.net452.dll",
+        "build/net462/xunit.runner.visualstudio.props",
+        "build/net462/xunit.runner.visualstudio.testadapter.dll",
+        "build/net6.0/xunit.abstractions.dll",
+        "build/net6.0/xunit.runner.reporters.netcoreapp10.dll",
+        "build/net6.0/xunit.runner.utility.netcoreapp10.dll",
+        "build/net6.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll",
+        "build/net6.0/xunit.runner.visualstudio.props",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "xunit.runner.visualstudio.2.5.0.nupkg.sha512",
+        "xunit.runner.visualstudio.nuspec"
+      ]
+    },
     "BookingService/1.0.0": {
       "type": "project",
       "path": "../BookingService/BookingService.csproj",
@@ -5624,7 +5662,8 @@
       "BookingService >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "Moq >= 4.20.2",
-      "xunit >= 2.5.0"
+      "xunit >= 2.5.0",
+      "xunit.runner.visualstudio >= 2.5.0"
     ]
   },
   "packageFolders": {
@@ -5691,6 +5730,10 @@
             "version": "[4.20.2, )"
           },
           "xunit": {
+            "target": "Package",
+            "version": "[2.5.0, )"
+          },
+          "xunit.runner.visualstudio": {
             "target": "Package",
             "version": "[2.5.0, )"
           }
