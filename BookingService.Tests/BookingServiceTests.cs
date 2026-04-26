@@ -8,7 +8,7 @@ using Xunit;
 
 public class BookingServiceTests
 {
-    private BookingService CreateService(out InMemoryProcessRepository repo)
+    private BookingProcessor CreateService(out InMemoryProcessRepository repo)
     {
         repo = new InMemoryProcessRepository();
         var logger = new Mock<ILogger<BookingService>>();
