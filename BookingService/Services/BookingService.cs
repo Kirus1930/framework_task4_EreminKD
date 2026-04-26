@@ -13,11 +13,13 @@ public class BookingProcessor
 {
     private readonly IProcessRepository _repo;
     private readonly ILogger<BookingProcessor> _logger;
+    private readonly bool _simulateFailure;
 
-    public BookingProcessor(IProcessRepository repo, ILogger<BookingProcessor> logger)
+    public BookingProcessor(IProcessRepository repo, ILogger<BookingProcessor> logger, bool simulateFailure = true)
     {
         _repo = repo;
         _logger = logger;
+        _simulateFailure = simulateFailure;
     }
 
     public async Task HandleEvent(
@@ -61,7 +63,7 @@ public class BookingProcessor
                 case BookingState.RoomReserved:
                     if (action == "pay")
                     {
-                        if (Random.Shared.Next(0, 3) == 0)
+                        if (_simulateFailure && Random.Shared.Next(0, 3) == 0)
                             throw new Exception("Payment failed");
 
                         process.State = BookingState.PaymentProcessed;
