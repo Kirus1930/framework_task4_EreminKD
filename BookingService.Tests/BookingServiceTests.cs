@@ -11,9 +11,10 @@ public class BookingServiceTests
     private BookingProcessor CreateService(out InMemoryProcessRepository repo)
     {
         repo = new InMemoryProcessRepository();
-        var logger = new Mock<ILogger<BookingService>>();
 
-        return new BookingService(repo, logger.Object);
+        var logger = new Mock<ILogger<BookingProcessor>>();
+
+        return new BookingProcessor(repo, logger.Object);
     }
 
     [Fact]
