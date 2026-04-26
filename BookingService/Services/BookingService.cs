@@ -9,12 +9,12 @@ using BookingService.Observability;
 
 namespace BookingService.Services;
 
-public class BookingService
+public class BookingProcessor
 {
     private readonly IProcessRepository _repo;
-    private readonly ILogger<BookingService> _logger;
+    private readonly ILogger<BookingProcessor> _logger;
 
-    public BookingService(IProcessRepository repo, ILogger<BookingService> logger)
+    public BookingProcessor(IProcessRepository repo, ILogger<BookingProcessor> logger)
     {
         _repo = repo;
         _logger = logger;
