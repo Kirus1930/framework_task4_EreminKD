@@ -7,9 +7,9 @@ namespace BookingService.Controllers;
 [Route("booking")]
 public class BookingController : ControllerBase
 {
-    private readonly Services.BookingService _service;
+    private readonly Services.BookingProcessor _service;
 
-    public BookingController(Services.BookingService service)
+    public BookingController(Services.BookingProcessor service)
     {
         _service = service;
     }
