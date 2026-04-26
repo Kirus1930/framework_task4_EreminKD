@@ -12,7 +12,8 @@ public class IdempotencyTests
     public async Task Duplicate_Event_Should_Not_Change_State()
     {
         var repo = new InMemoryProcessRepository();
-        var logger = new Mock<ILogger<BookingService>>();
+        var logger = new Mock<ILogger<BookingProcessor>>();
+
         var service = new BookingProcessor(repo, logger.Object);
 
         await service.HandleEvent("1", "dup", "c1", "create");
