@@ -14,7 +14,7 @@ public class BookingServiceTests
 
         var logger = new Mock<ILogger<BookingProcessor>>();
 
-        return new BookingProcessor(repo, logger.Object);
+        return new BookingProcessor(repo, logger.Object, simulateFailure: false);
     }
 
     [Fact]
