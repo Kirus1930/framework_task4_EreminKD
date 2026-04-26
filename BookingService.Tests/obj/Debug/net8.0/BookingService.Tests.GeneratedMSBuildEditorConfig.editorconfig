@@ -1,7 +1,4 @@
 is_global = true
-build_property.DesignTimeBuild = 
-build_property.MSBuildProjectFullPath = C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\BookingService.Tests.csproj
-build_property.DebugSponsorLink = 
 build_property.TargetFramework = net8.0
 build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v8.0
