@@ -13,7 +13,7 @@ public class IdempotencyTests
     {
         var repo = new InMemoryProcessRepository();
         var logger = new Mock<ILogger<BookingService>>();
-        var service = new BookingService(repo, logger.Object);
+        var service = new BookingProcessor(repo, logger.Object);
 
         await service.HandleEvent("1", "dup", "c1", "create");
         await service.HandleEvent("1", "dup", "c1", "create");
