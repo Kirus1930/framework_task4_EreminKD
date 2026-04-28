@@ -157,6 +157,7 @@ curl -X POST "http://localhost:5000/booking?processId=1&action=complete" \
 ### Проверка состояния сервиса:
 ```bash
 http://localhost:5000/health/live
+
 http://localhost:5000/health/ready
 ```
 
