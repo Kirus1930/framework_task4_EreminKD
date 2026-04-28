@@ -133,18 +133,22 @@ ILogger; Metrics
 
 ### Пример API:
 ```bash
+# Создание новой записи (изменение состояния: None -> Created)
 curl -X POST "http://localhost:5000/booking?processId=1&action=create" \
  -H "Idempotency-Key: 1" \
  -H "X-Correlation-Id: abc"
 
+# Бронирование (если использовать перед create, не будет перехода: Created -> RoomReserved)
 curl -X POST "http://localhost:5000/booking?processId=1&action=reserve" \
  -H "Idempotency-Key: 2" \
  -H "X-Correlation-Id: abc"
 
+# Оплата (RoomReserved -> PaymentProcessed, если возникнет ошибка "Payment failed", то: RoomReserved -> Error: Payment failed -> Сompensation -> Created)
 curl -X POST "http://localhost:5000/booking?processId=1&action=pay" \
  -H "Idempotency-Key: 3" \
  -H "X-Correlation-Id: abc"
 
+# Завершение (PaymentProcessed -> Completed)
 curl -X POST "http://localhost:5000/booking?processId=1&action=complete" \
  -H "Idempotency-Key: 4" \
  -H "X-Correlation-Id: abc"
@@ -295,3 +299,5 @@ PS C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests
 Сводка теста: всего: 3; сбой: 0; успешно: 3; пропущено: 0; длительность: 1,6 с
 Сборка успешно выполнено через 9,9 с
 ```
+
+Проект реализует веб-службу с машиной состояний, которая управляет процессом бронирования. Сервис обрабатывает события идемпотентно, поддерживает компенсацию при сбоях и обеспечивает наблюдаемость через логи и метрики. Это демонстрирует базовые принципы построения устойчивых распределённых систем.
