@@ -107,3 +107,4 @@ C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\ob
 C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\obj\Debug\net8.0\BookingService.Tests.pdb
 C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\obj\Debug\net8.0\BookingService.Tests.genruntimeconfig.cache
 C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\obj\Debug\net8.0\ref\BookingService.Tests.dll
+C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService.Tests\obj\Debug\net8.0\BookingService.Tests.sourcelink.json
