@@ -81,7 +81,7 @@ public class BookingProcessor
 
             Metrics.SuccessTransitions.Add(1);
 
-            _logger.LogInformation("State → {State}", process.State);
+            _logger.LogInformation("State: {State}", process.State);
         }
         catch (Exception ex)
         {
