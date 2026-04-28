@@ -200,7 +200,7 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
 info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
       Route matched with {action = "Process", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Process(System.String, System.String, System.String, System.String) on controller BookingService.Controllers.BookingController (BookingService).
 info: BookingService.Services.BookingService[0]
-      State → Created
+      State: Created
 info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
       Executing StatusCodeResult, setting HTTP status code 200
 info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
@@ -216,7 +216,7 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
 info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
       Route matched with {action = "Process", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Process(System.String, System.String, System.String, System.String) on controller BookingService.Controllers.BookingController (BookingService).
 info: BookingService.Services.BookingService[0]
-      State → RoomReserved
+      State: RoomReserved
 info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
       Executing StatusCodeResult, setting HTTP status code 200
 info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
@@ -232,7 +232,7 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
 info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
       Route matched with {action = "Process", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Process(System.String, System.String, System.String, System.String) on controller BookingService.Controllers.BookingController (BookingService).
 info: BookingService.Services.BookingService[0]
-      State → PaymentProcessed
+      State: PaymentProcessed
 info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
       Executing StatusCodeResult, setting HTTP status code 200
 info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
