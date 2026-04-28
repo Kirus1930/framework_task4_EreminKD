@@ -29,3 +29,4 @@ C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService\obj\Debu
 C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService\obj\Debug\net8.0\BookingService.pdb
 C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService\obj\Debug\net8.0\BookingService.genruntimeconfig.cache
 C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService\obj\Debug\net8.0\ref\BookingService.dll
+C:\Users\Kiril\Documents\GitHub\framework_task4_EreminKD\BookingService\obj\Debug\net8.0\BookingService.sourcelink.json
